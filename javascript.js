@@ -22,7 +22,8 @@ function changeSize(){
     let userInputSize = prompt("Enter new size (max size - 100):");
     if(isNaN(userInputSize) || userInputSize === ""){
         alert("Not a valid size");
-    } else if (userInputSize === null){  // Does nothing if input window cancelled by user
+    } else if (userInputSize === null){
+    // Does nothing if input window cancelled by user
     } else if (Number(userInputSize) > 100) {
         alert("Enter a size below 100");
     } else {
