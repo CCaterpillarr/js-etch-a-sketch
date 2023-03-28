@@ -29,6 +29,7 @@ html {
 .container {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 .tile {
@@ -40,4 +41,5 @@ html {
 /* .tileSection {
     background-color: red;
     padding: 20px;
+    border: 2px solid black;
 } */
