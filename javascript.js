@@ -1,6 +1,13 @@
 function changeSize(){
-    size = prompt("siema");
-    reset();
+
+    let userInputSize = prompt("Enter new size:");
+    
+     if(isNaN(userInputSize)){
+         alert("Not a valid size");
+     } else {
+         size = userInputSize;
+         reset();
+    }
 }
 
 function reset(){
