@@ -1,0 +1,22 @@
+html {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+
+.header {
+    display: flex;
+    padding: 0 20px;
+}
+
+.reset {
+    padding: 0 30px;
+    margin: 10px 25px;
+    font-size: 20px;
+}
