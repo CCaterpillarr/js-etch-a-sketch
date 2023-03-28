@@ -1,3 +1,5 @@
+/* whole document rules */
+
 html {
     box-sizing: border-box;
     margin: 0px;
@@ -9,6 +11,7 @@ html {
     box-sizing: inherit;
   }
 
+/* header */
 
 .header {
     display: flex;
@@ -19,4 +22,16 @@ html {
     padding: 0 30px;
     margin: 10px 25px;
     font-size: 20px;
+}
+
+/* tiles */
+
+.container {
+    display: flex;
+}
+
+.tile {
+    background-color: #EFEFEF;
+    padding: 100px;
+    border: 1px solid rgb(212, 212, 212);
 }
