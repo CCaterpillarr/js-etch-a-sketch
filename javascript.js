@@ -1,7 +1,13 @@
+function changeSize(){
+    size = prompt("siema");
+    reset();
+}
+
 function reset(){
-    for (let i = 0; i < size; i++){
+    while (container.lastChild != null){
         container.removeChild(container.lastChild);
     }
+    
     draw();
 }
 
@@ -32,12 +38,15 @@ function changeColor(element){
 
 const container = document.querySelector(".container");
 
-let size = 16;
-
 const tileSections = [];
 const tiles = [];
 
 const resetButton = document.querySelector(".resetButton");
 resetButton.addEventListener("click", reset);
 
-draw();
+const changeSizeButton = document.querySelector(".changeSizeButton");
+changeSizeButton.addEventListener("click", changeSize);
+
+
+let size = 16;  // Default size
+draw();  // Draw initial grid
