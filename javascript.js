@@ -20,11 +20,11 @@ function createTiles(){
 
 function changeSize(){
     let userInputSize = prompt("Enter new size (max size - 100):");
-     if(isNaN(userInputSize)){
+    if(isNaN(userInputSize)){
         alert("Not a valid size");
-     } else if (Number(userInputSize) > 100) {
+    } else if (Number(userInputSize) > 100) {
         alert("Enter a size below 100");
-     } else {
+    } else {
         size = userInputSize;
         reset();
     }
