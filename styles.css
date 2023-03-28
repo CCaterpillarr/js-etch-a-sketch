@@ -18,9 +18,9 @@ html {
     padding: 0 20px;
 }
 
-.resetButton {
+button {
     padding: 0 30px;
-    margin: 10px 25px;
+    margin: 10px 0 10px 25px;
     font-size: 20px;
 }
 
