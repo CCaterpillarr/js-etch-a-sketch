@@ -12,6 +12,7 @@ function createTiles(){
         for (let j = 0; j < size; j++){  // <size> number of tiles appear vertically in each tile section
             tiles[j] = document.createElement("div");
             tiles[j].classList.toggle("tile");  // This class gives them size and gray background
+            tiles[j].setAttribute("id", `${j}-${i}`);  // Gives each tile a unique id. Not used for anything currently but might be very useful in the future.
             tiles[j].setAttribute("onmouseover", "changeColor(this)");
             tileSections[i].appendChild(tiles[j]);
         }
