@@ -1,6 +1,5 @@
 function changeColor(element){
     element.style.backgroundColor="black";
-    element.style.border = "1px solid rgb(31, 31, 31)"
 }
 
 function createTiles(){
@@ -8,7 +7,8 @@ function createTiles(){
     const tiles = [];
     for (let i = 0; i < size; i++){  // <size> number of tile sections appear horizontally (cause of display:flex)
         tileSections[i] = document.createElement("div");
-        container.appendChild(tileSections[i]);
+        tileSections[i].classList.toggle("tileSection");
+        grid.appendChild(tileSections[i]);
         for (let j = 0; j < size; j++){  // <size> number of tiles appear vertically in each tile section
             tiles[j] = document.createElement("div");
             tiles[j].classList.toggle("tile");  // This class gives them size and gray background
@@ -34,14 +34,14 @@ function changeSize(){
 
 function reset(){
     
-    while (container.lastChild != null){
-        container.removeChild(container.lastChild);
+    while (grid.lastChild != null){
+        grid.removeChild(grid.lastChild);
     }
     
     createTiles();
 }
 
-const container = document.querySelector(".container");  // Container for the grid of tiles
+const grid = document.querySelector(".grid");  // Container for the tileSections
 
 const resetButton = document.querySelector(".resetButton");
 resetButton.addEventListener("click", reset);

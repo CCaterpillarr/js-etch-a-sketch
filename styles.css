@@ -36,14 +36,30 @@ h1 {
 
 /* tiles */
 
-.container {
+.gridContainer {
+    margin: 20px;
     display: flex;
     justify-content: center;
-    padding: 20px;
+}
+
+.grid {
+    flex: 0 0 auto;
+    display: flex;
+    width: 830px;
+    height: 830px;
+    border: 3px solid rgb(122, 122, 122);
+    border-radius: 5px;
+}
+
+.tileSection {
+    background-color: rgb(66, 66, 66);
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .tile {
     background-color: #EFEFEF;
-    padding: 30px;
-    border: 1px solid rgb(212, 212, 212);
+    flex: 1 0 0;
+    border-radius: 3px;
 }
